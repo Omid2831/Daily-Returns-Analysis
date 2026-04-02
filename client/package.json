@@ -1,9 +1,9 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "",
+  "description": "A client for fetching and displaying stock data",
   "license": "ISC",
-  "author": "",
+  "author": "omid mhr",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
