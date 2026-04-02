@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Returns Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100 text-gray-900 py-10 px-4">
+    <main class="max-w-4xl mx-auto">
+      <!-- Daily Return Analysis - Table-->
+      <h1 class="text-center text-3xl font-semibold">Daily Return Analysis</h1>
+      <!-- Table on the center of the page -->
+      <table
+        class="table-auto w-full mt-6 border-collapse border border-gray-400 bg-white"
+      >
+        <thead>
+          <tr>
+            <th class="border border-gray-400 px-4 py-2">Date</th>
+            <th class="border border-gray-400 px-4 py-2">Channel</th>
+            <th class="border border-gray-400 px-4 py-2">Total Gross Amount</th>
+            <th class="border border-gray-400 px-4 py-2">
+              Total Return Amount
+            </th>
+          </tr>
+        </thead>
+        <tbody id="daily-return-table-body">
+          <!-- Data will be populated here by JavaScript -->
+        </tbody>
+      </table>
+      <!-- Download CSV Button - center of the page -->
+      <div class="flex justify-center mt-4">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          id="download-csv"
+        >
+          Download CSV
+        </button>
+      </div>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
