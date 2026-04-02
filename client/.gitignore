@@ -1,2 +1,5 @@
 # ignore node modules
 /node_modules
+
+# ignore generated data files
+/public/data/*_aggregated.csv
